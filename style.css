@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+}
+
+img {
+    -webkit-user-select: none;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    transition: all 1s;
+  }
+  
+  .background {
+    background-image: url("landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .bunnies {
+    width:70px;
+    height: 75px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: solid 10px black;
+  }
+  
+  .bunbtn {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .delete {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    background-color: #548eeb;
+    outline: none;
+    font-weight: bold;
+  }
+  
+  @media screen and (min-width: 375px) {
+    .background {
+      width: 100%;
+      background-size: 100% 100%;
+    }
+    
+    .bunnies {
+      width: 100px;
+      height: 105px;
+    }
+   
+  }
